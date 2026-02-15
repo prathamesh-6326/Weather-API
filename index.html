@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Modern Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Weather Forecast</h1>
+
+    <form id="myForm">
+        <input type="text" id="city" required placeholder="Enter city (e.g. London, UK)">
+        <input type="submit" value="Get Weather">
+    </form>
+
+    <div id="weather-wrapper" class="weather-wrapper hide">
+        <div class="weather-header">
+            <img id="w-icon" src="" class="weather-icon" alt="Icon" />
+            <span id="w-place" class="weather-place"></span>
+            <span id="w-temp" class="weather-temperature"></span>
+            <p><span id="w-min"></span> / <span id="w-max"></span></p>
+            <p id="w-desc" class="weather-description capitalize" style="margin-top: 5px; font-weight: 300;"></p>
+        </div>
+
+        <div class="stat-box">
+            <strong>Humidity</strong><br />
+            <span id="w-humidity"></span>
+        </div>
+
+        <div class="stat-box">
+            <strong>Wind Speed</strong><br />
+            <span id="w-wind"></span>
+        </div>
+
+        <div class="stat-box">
+            <strong>Sunrise</strong><br />
+            <span id="w-sunrise"></span>
+        </div>
+
+        <div class="stat-box">
+            <strong>Sunset</strong><br />
+            <span id="w-sunset"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
